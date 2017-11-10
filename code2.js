@@ -1,4 +1,4 @@
-﻿
+
 
 function bl() {
     var e, t = [
@@ -117,7 +117,7 @@ function sIT(e, l, r, t, n, s, s2) {
                         var o;
                         //console.log("__________")
                         //console.log(typeof c[2][0])
-                        if ("8" !== c[2][3][0]) {
+                        if ("∞" !== c[2][3][0]) {
                             if ("1" === y) {
                                 if (c[2][0].indexOf(".") != -1) {
                                     //alert(c[2][2])
@@ -145,15 +145,15 @@ function sIT(e, l, r, t, n, s, s2) {
                             sIT(e, o * c[2][3][2], c[2][3][1], 1, 1, c[2][0], s2)
                         } else
                             sIT(e, c[2][3][0], c[2][3][1], 1, 1, c[2][0], s2);
-                        // "8" !== c[2][3][2] ? sIT(e,  o * c[2][3][2], c[2][3][1],1, 1, c[2][0]) : sIT(e,  c[2][3][2], c[2][3][1], 1,1, c[2][0])
+                        // "∞" !== c[2][3][2] ? sIT(e,  o * c[2][3][2], c[2][3][1],1, 1, c[2][0]) : sIT(e,  c[2][3][2], c[2][3][1], 1,1, c[2][0])
                     } else e[0](e[1], e[2], e[e.length - 1]);
                 var ll = false,
                     returnBo = true,
                     add, s2_ = s;
                 if (1 === n) {
-                    "set" === (e[0].toString().match(/^function\s*([^\s(]+)/) || [])[1] ? (p = e[1][1], d = e[1][1][2], ll = "8" === l, /*""+p[2][5]!==""+s2?(""+p[2][5].search("j")==-1 ?p[2][5]="j":s2):"m" ,*/ (p[2][3][4] == s2 && p[2][0].length === s.length && p[2][0] === s) ? (p[2][3][5] > 0 && (p[2][3][5]--), "0" === p[2][0][p[2][0].length - 1] ? ( /*console.log(".0 + " + p[2][0]),*/ p[2][0] = s = "0", p[2][3][3]++ /*, console.log("0 + " + p[2][0])*/ ) : ( /*console.log(".1 - " + p[2][0]),*/ p[2][0] = s = "1", p[2][3][3]-- /*, console.log("1 - " + p[2][0])*/ ), "function" == typeof p[2][4] ? ( (p[2][4].toString().match(/^function\s*([^\s(]+)/) || [])[1]=="ho2_"?(a =p[2][4](e,p[2][1], d[2][0]),a[2] != undefined && (a[2]!="8"?g = a[2]-1:g = a[2]),add =  [p[1],p[2][3][1]]):(a = p[2][4](p[2][1], d[2][0], p[1], d[3][1], e[1][0]), a[2] != undefined && (add = a[2])),p[2][3][0]==="8"&&(p[2][3][3]=0), p[2][1] = a[0], d[2][0] = a[1]) : "+" === p[2][1] && (ll || d[2][0] < d[3][0] ) ? d[2][0]++ : (d[2][0]--, p[2][1] = "-", -1 === d[2][0] && (d[2][0] += 2, p[2][1] = "+")), e[0](e[1][0], p[0], add != undefined ? add[0] : p[1], d[2])) : (p[2][3][5]--, clearInterval(i), returnBo = false)) : e[0]("obj", e[1]);
+                    "set" === (e[0].toString().match(/^function\s*([^\s(]+)/) || [])[1] ? (p = e[1][1], d = e[1][1][2], ll = "∞" === l, /*""+p[2][5]!==""+s2?(""+p[2][5].search("j")==-1 ?p[2][5]="j":s2):"m" ,*/ (p[2][3][4] == s2 && p[2][0].length === s.length && p[2][0] === s) ? (p[2][3][5] > 0 && (p[2][3][5]--), "0" === p[2][0][p[2][0].length - 1] ? ( /*console.log(".0 + " + p[2][0]),*/ p[2][0] = s = "0", p[2][3][3]++ /*, console.log("0 + " + p[2][0])*/ ) : ( /*console.log(".1 - " + p[2][0]),*/ p[2][0] = s = "1", p[2][3][3]-- /*, console.log("1 - " + p[2][0])*/ ), "function" == typeof p[2][4] ? ( (p[2][4].toString().match(/^function\s*([^\s(]+)/) || [])[1]=="ho2_"?(a =p[2][4](e,p[2][1], d[2][0]),a[2] != undefined && (a[2]!="∞"?g = a[2]-1:g = a[2]),add =  [p[1],p[2][3][1]]):(a = p[2][4](p[2][1], d[2][0], p[1], d[3][1], e[1][0]), a[2] != undefined && (add = a[2])),p[2][3][0]==="∞"&&(p[2][3][3]=0), p[2][1] = a[0], d[2][0] = a[1]) : "+" === p[2][1] && (ll || d[2][0] < d[3][0] ) ? d[2][0]++ : (d[2][0]--, p[2][1] = "-", -1 === d[2][0] && (d[2][0] += 2, p[2][1] = "+")), e[0](e[1][0], p[0], add != undefined ? add[0] : p[1], d[2])) : (p[2][3][5]--, clearInterval(i), returnBo = false)) : e[0]("obj", e[1]);
 //g=d[3][0];
-                    console.log(g)
+                     //console.log(g)
                    /*
              if(!returnBo){
       if(true && g-1!=0)
@@ -178,7 +178,7 @@ function sIT(e, l, r, t, n, s, s2) {
                             //if(p[2][3][4]!==s2)
                             //p[2][3][4]++;
 							p[2][3][5]++;
-							if(g != "8" )
+							if(g != "∞" )
                             
                             {//g=d[3][0];
 								if( g != 0)
@@ -196,7 +196,7 @@ function sIT(e, l, r, t, n, s, s2) {
                 //  e();
                 //clearInterval(i) ;
                 //if(h==2)
-                //bl(sIT(f,"8",5000,1))
+                //bl(sIT(f,"∞",5000,1))
                 //function f(){alert("hh")} 
                 //if(s=="x"||h==0)
                 if (false) {
@@ -217,7 +217,7 @@ function sIT(e, l, r, t, n, s, s2) {
 
             if (t == 1) {
                 h++;
-                if ("8" !== g && h > g)
+                if ("∞" !== g && h > g)
                     clearInterval(i);
 
             } else {
@@ -225,14 +225,14 @@ function sIT(e, l, r, t, n, s, s2) {
                 f = r;
                 g = l;
                 clearInterval(i);
-                if ("8" === g) sIT(e, g, f, t, "noObj");
+                if ("∞" === g) sIT(e, g, f, t, "noObj");
                 else {
 
                     g != 0 && (sIT(e, g - 1, f, t, "noObj"))
                 }
-                // h++, "8" !== g && (h > g || 1 !== t) && (clearInterval(i), 1 !== t && (t = 1, f = r, g = l, g!=0 && (sIT(e, g - 1, f, t,"noObj"))))
+                // h++, "∞" !== g && (h > g || 1 !== t) && (clearInterval(i), 1 !== t && (t = 1, f = r, g = l, g!=0 && (sIT(e, g - 1, f, t,"noObj"))))
             }
-            //  h++, "8" !== g && (h > g || 1 !== t) && (clearInterval(i), 1 !== t && (t = 1, f = r, g = l, g!=0 && (sIT(e, g - 1, f, t,"noObj"))))
+            //  h++, "∞" !== g && (h > g || 1 !== t) && (clearInterval(i), 1 !== t && (t = 1, f = r, g = l, g!=0 && (sIT(e, g - 1, f, t,"noObj"))))
         }
         var i, a, c, p, d, h = 0,
             f = r,
@@ -240,7 +240,7 @@ function sIT(e, l, r, t, n, s, s2) {
         1 !== t && (f = t), i = setInterval(o, f)
     }
     if (typeof e == "function") {
-        l = "number" == typeof l || l === "8" ? l : 5;
+        l = "number" == typeof l || l === "∞" ? l : 5;
         r = "number" == typeof r ? r : 1000;
         t = "number" == typeof t ? t : 0;
         if (n == "noObj")
@@ -255,7 +255,7 @@ function sIT(e, l, r, t, n, s, s2) {
         //alert(i)
         return i[i.length] = "sit", i
     } else if ("object" == typeof e) {
-        if ("number" == typeof e[1] || e[1] === "8") {
+        if ("number" == typeof e[1] || e[1] === "∞") {
             l = e[1];
             r = e[2];
             t = e[3];
@@ -602,12 +602,12 @@ function anmt() {
         ], count = 0, r = 0; r < arguments.length; r++) {
 
         //console.log("zz")
-        if ("string" == typeof arguments[r] && "8" !== arguments[r]) {
+        if ("string" == typeof arguments[r] && "∞" !== arguments[r]) {
             t[r] = [], e = arguments[r].split("|");
             for (var n = 0; n < e.length; n++) 0 === r ? t[r][t[r].length] = e[n].split(".") : t[r][t[r].length] = e[n].split("_")
         } else {
             // 1 === r &&( t[r] = [ ["5%", "p+X+s"] ]);
-            if ("number" == typeof arguments[r] || "8" == arguments[r]) {
+            if ("number" == typeof arguments[r] || "∞" == arguments[r]) {
                 t[2][count] = arguments[r];
                 count++;
             } else if ("function" == typeof arguments[r]) {
