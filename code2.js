@@ -163,6 +163,7 @@ function sIT(e, l, r, t, n, s, s2) {
 										if((p[2][4].toString().match(/^function\s*([^\s(]+)/) || [])[1]=="ho2_"){a =p[2][4](e,p[2][1], d[2][0]);
 											if(a[2] != undefined) {
 												if(a[2]=="cancel") {
+
 													return void clearInterval(i); 
 												}
 												a[2]!="∞"?g = a[2]-1:g = a[2]};
@@ -343,6 +344,7 @@ function style(ele, prpT, val, aS) { //console.log("style")
                             if (set0 = pG[i][1], set1 = pG[i][1].match(/([+-]?\d+\.\d+|[+-]?\d+)/g), null !== set1) {
                                 prc2 = [];
                                 for (var prc3, s = 0; s < set1.length; s++) {
+									set1[s] =Number(set1[s] );
                                     if (void 0 !== prc[s] && prc[s].search("%") > -1) {
                                         if (prc[s].search("%.") > -1)
                                             fois = prpT[2][0];
