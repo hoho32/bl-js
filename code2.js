@@ -1151,7 +1151,7 @@ function ho2(e,t,z){
 		 // console.log("jadid "+r+" "+l)
    var k,kk;
 		   // s =  typeof t!="function"? void 0 !== t?t : -1;
-		   "+" === l && (n === true || n > r) ? r++ : (r--, l = "-", (r == s||r < s) && (r += 2, l = "+")); /*console.log("jadid2 "+r+" "+l), */
+		   "+" === l && (n === true || n > r) ? r++ : (r--, e[1][1][2][1]=l = "-", (r == s||r < s) && (r += 2, e[1][1][2][1]=l = "+")); /*console.log("jadid2 "+r+" "+l), */
 		 if (typeof z == "object" /*&& (fAdd=z(Math.abs(r),w))!=undefined*/ ) {
  		   for (var i = 0; i < z.length; i++)
 		  { //z[i](e)
