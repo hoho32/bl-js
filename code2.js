@@ -1152,8 +1152,8 @@ function ho2(e,t,z){
    var k,kk;
 		   // s =  typeof t!="function"? void 0 !== t?t : -1;
 		 //  "+" === l && (n === true || n > r) ? r++ : (r--, e[1][1][2][1]=l = "-", (r == s||r < s) && (r += 2, e[1][1][2][1]=l = "+")); /*console.log("jadid2 "+r+" "+l), */
-		// "+" === l && (n === true || n > r) ? e[1][1][2][2][0]++ : (r--, e[1][1][2][1]= "-", (r == s||r < s) && (e[1][1][2][2][0] += 2, e[1][1][2][1] = "+")); /*console.log("jadid2 "+r+" "+l), */
-		  "+" === l && (n === true || n > r) ? r++ : (r--, e[1][1][2][1]=l = "-", (r == s||r < s) && (r += 2, e[1][1][2][1]=l = "+")); /*console.log("jadid2 "+r+" "+l), */
+		 "+" === l && (n === true || n > r) ? e[1][1][2][2][0]++ : (r--, e[1][1][2][1]= "-", (r == s||r < s) && (e[1][1][2][2][0] += 2, e[1][1][2][1] = "+")); /*console.log("jadid2 "+r+" "+l), */
+		//  "+" === l && (n === true || n > r) ? r++ : (r--, e[1][1][2][1]=l = "-", (r == s||r < s) && (r += 2, e[1][1][2][1]=l = "+")); /*console.log("jadid2 "+r+" "+l), */
 		 
 		   
 		   console.log("////nrs "+n+" "+r+" "+s);
@@ -1161,7 +1161,7 @@ function ho2(e,t,z){
 		   if (typeof z == "object" /*&& (fAdd=z(Math.abs(r),w))!=undefined*/ ) {
  		   for (var i = 0; i < z.length; i++)
 		  { //z[i](e)
-		 k= z[i](e,l,r)
+		 k= z[i](e,e[1][1][2][1],e[1][1][2][2][0])
 k!=undefined &&(k!=""&&(typeof k=="object"?(k[0]=="Mx"?n=k[1]:s=k[1]):kk=k),i = z.length)
 		  }		  }else if (typeof z == "function" /*&& (fAdd=z(Math.abs(r),w))!=undefined*/ ) {
 if((z.toString().match(/^function\s*([^\s(]+)/) || [])[1]=="ch"){
