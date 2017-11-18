@@ -1152,7 +1152,9 @@ function ho2(e,t,z){
    var k,kk;
 		   // s =  typeof t!="function"? void 0 !== t?t : -1;
 		   "+" === l && (n === true || n > r) ? r++ : (r--, e[1][1][2][1]=l = "-", (r == s||r < s) && (r += 2, e[1][1][2][1]=l = "+")); /*console.log("jadid2 "+r+" "+l), */
-		 if (typeof z == "object" /*&& (fAdd=z(Math.abs(r),w))!=undefined*/ ) {
+		 console.log("////nrs "+n+" "+r+" "+s);
+			    
+		   if (typeof z == "object" /*&& (fAdd=z(Math.abs(r),w))!=undefined*/ ) {
  		   for (var i = 0; i < z.length; i++)
 		  { //z[i](e)
 		 k= z[i](e)
