@@ -1156,7 +1156,7 @@ function ho2(e,t,z){
 		//  "+" === l && (n === true || n > r) ? r++ : (r--, e[1][1][2][1]=l = "-", (r == s||r < s) && (r += 2, e[1][1][2][1]=l = "+")); /*console.log("jadid2 "+r+" "+l), */
 		 
 		   
-		 // console.log("////nrs "+n+" "+r+" "+s);
+		  console.log("////nrs "+n+" "+r+" "+s);
 			    
 		   if (typeof z == "object" /*&& (fAdd=z(Math.abs(r),w))!=undefined*/ ) {
  		   for (var i = 0; i < z.length; i++)
