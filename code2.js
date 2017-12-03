@@ -1668,7 +1668,7 @@ function forCode(w_, h_) {
         s = n.indexOf(t[0]);
         for (var i = 1; i < t.length; i++)
             if (o = n.indexOf(t[i]), o > -1 && (s = -1 !== s && o > s ? s : o), i == t.length - 1) {
-                if (-1 === s) return n = n.replace(/?§§@£?/g, "/");
+                if (-1 === s) return n = n.replace(/£§§@££/g, "/");
                 if ("'" === n.charAt(s)) {
                     for (var a = /(\'\'|('[\S\s]*?[^\\]'))/g; 0 == a.lastIndex && null != (r = a.exec(n));) qu[qu.length] = r[0];
                     n = n.replace(/(\'\'|('[\S\s]*?[^\\]'))/, "µ§@@#")
@@ -1688,9 +1688,9 @@ function forCode(w_, h_) {
                     if ("(" === h[h.length - 1] || "=" === h[h.length - 1]) {
                         for (var f = /(\/)[\S ]*?([^\\]\/)/g; 0 == f.lastIndex && null != (r = f.exec(n));) resg[resg.length] = r[0];
                         n = n.replace(/(\/)[\S ]*?([^\\]\/)/, "µ£§@@#")
-                    } else n = hh + "?§§@£?" + n.substring(s + 1)
+                    } else n = hh + "£§§@££" + n.substring(s + 1)
                 } else r = null;
-                if (i = 0, z = s, s = n.indexOf(t[0]), null == r) return n = n.replace(/?§§@£?/g, "/")
+                if (i = 0, z = s, s = n.indexOf(t[0]), null == r) return n = n.replace(/£§§@££/g, "/")
             }
     }
     var cc2 = 0,
@@ -2455,7 +2455,6 @@ while(nextSibling /*&& nextSibling.nodeType != 1*/) {
 
 return tV;
 }
-
 
 
 
