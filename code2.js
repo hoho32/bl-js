@@ -1755,6 +1755,737 @@ function mE(e, t, l, r) {
 }
 
 
+function treeView(){
+  function ar_(e,s,h){
+    
+  var b,j=isO(bl(e)),el, pp,rr,n,ro,count;
+   
+    var color=["black","red"];
+var n=1;
+    if(j!=undefined) {
+     jj=j.length;
+      /*jj= isNaN(jj)?1:jj;*/
+      for (var m=0;m< jj;m++){
+   if(s=="check"){
+     // ar_("."+cl.replace(/ /g,".")+" #chek","check");
+     
+     pp="3_p+X*s",rr="rotate(-135deg)",n=0;
+      
+    // alert(gS(el[1], "transform_matrix".split("_"))[0][1])
+     if(gS(bl(e+1,m), "transform_matrix".split("_"))[0][1]==="matrix(1, 0, 0, 1, 0, 0)")
+{     pp="3_p-X*s",rr="rotate(0deg)",n=1; //b=animate(bl(e+1,m),anmt("transform","3_p+X*s",45,10,ho(45)),"rotate(-135deg)",1);
+     }
+     
+    // bl(e,m,f_(n,bl(e+0,m,e+1,m)));
+       
+     b=animate(bl(e+1,m),anmt("transform",pp,45,10,ho(45)),rr,1);
+// bl(e,m).prototype.changeColor =b;
+  bl(e,m).cHek =false;
+      bl(e,m).cHekF =b;
+     bl(e,m).cHekFun =f_(n,bl(e+0,m,e+1,m)/*,e,m,".gChek #chek"*/);
+    bl(e,m).cHekFr = function (el,elStr) {
+      return function () {
+        var elStr2;
+      el.cHek ==false?el.cHek =true:el.cHek =false;
+    bl(el.cHekF);bl(el.cHekFun);
+        var j=isO(bl(elStr+" .gChek #chek")),jj;
+        j!=undefined && (jj=j.length);
+        
+        for (var i=0;i< jj;i++){
+        
+          if(j[i].cHek!=el.cHek)
+            {j[i].cHek =el.cHek;bl(j[i].cHekF);bl(j[i].cHekFun);}
+        }
+        
+ var ele=el.parentElement;      while((ele=ele.parentElement).getAttribute("class").search('RoOt')==-1){
+             // el.nextSibling.getAttribute("class").replace(/ /g,".")
+    allCh(ele)
+              }
+       
+        
+      function allCh(a)  {
+       var  d= a.previousSibling;
+       if(d!=undefined && (dd=d.getAttribute("class")).search('gChek')!=-1 ) 
+        { elStr2=bl("."+dd.replace(/ /g,".")+" #chek");
+         
+         var j=isO(bl("."+a.getAttribute("class").replace(/ /g,".")+" .gChek #chek")),jj;
+        j!=undefined && (jj=j.length);
+          for (var i=0;i< jj;i++){
+        
+          if(!j[i].cHek)
+            {jj=0}
+        }
+        if(jj==0 ){
+         
+          if(elStr2.cHek){elStr2.cHek =false;bl(elStr2.cHekF);bl(elStr2.cHekFun);}
+        }else if(!elStr2.cHek)
+         { elStr2.cHek =true;bl(elStr2.cHekF);bl(elStr2.cHekFun);}
+              //}else{ bl(elStr2.cHekF);bl(elStr2.cHekFun);}
+        }
+         /*while(el.parentElement.previousSibling.getAttribute("class").search('gChek')!=-1){
+              el.nextSibling.getAttribute("class").replace(/ /g,".")
+              }*/}
+};
+};
+    // bl(e,m,f,b);
+    //bl(e,m).cHek2(b)
+bl(e,m,bl(e,m).cHekFr(bl(e,m),h));
+    /* if(e==".gChek.c1 #chek"){
+       bl(e,m,bl(".gChek.c0 #chek",0).cHekFr(bl(".gChek.c0 #chek",0)));
+     }*/
+     //n= n==1?0:1;
+ 
+  //bl(e,m,style(bl(e+0,m,e+1,m),"fill",color[n],sIT(560,0,0)))
+     
+   }else if(s=="radio" ){
+     
+   if( bl(e+">.gRadio")!=undefined){ 
+     function xrf(ix,tr,tf){
+       function xrf2(){
+        bl(tr[ix]);bl(tf[ix]);
+         if(tr[0]!=-1){
+            
+           bl(tr[tr[0]]);bl(tf[tr[0]]);}
+         tr[0]=ix;
+     }return xrf2;
+     }
+     var par=e+">.gRadio"+">.radio";
+    // console.log(par)
+     var chl=bl(par);
+  var q=chl.length;
+     q= isNaN(q)?1:q;
+     var tabR=[-1],tabF=[""];
+  for (var i = 0; i < q; i++)
+{
+
+     
+     
+         pp="4_p+X*s",rr="translateY(-168px)",n=0;
+      
+    // alert(gS(el[1], "transform_matrix".split("_"))[0][1])
+     if(gS(bl(par+">#radio"+1,i), "transform_matrix".split("_"))[0][1]==="matrix(1, 0, 0, 1, 0, 0)")
+{     pp="4_p-X*s",rr="translateY(0px)",n=1; //b=animate(bl(e+1,m),anmt("transform","3_p+X*s",45,10,ho(45)),"rotate(-135deg)",1);
+     }
+     
+    
+     //bl(par,i,f_(n,bl(par+">#radio"+0,i,par+">#radio"+1,i)));
+  //b=animate(bl(par+">#radio"+1,i),anmt("transform",pp,60,10,ho(51)),rr,1);
+    
+//bl(par,i,b);
+  tabF.push(f_r(n,bl(par+">#radio"+0,i,par+">#radio"+1,i)));
+  tabR.push(animate(bl(par+">#radio"+1,i),anmt("transform",pp,60,10,ho(51)),rr,1));
+ 
+   bl(par,i,xrf(i+1,tabR,tabF)); 
+  
+  
+} }  
+} else {
+  
+    pp="2_p+X*s",rr="rotate(0deg)",n=0;
+      
+     el=bl(e,m);
+  // alert(gS(el, "transform".split("_"))[0][1])
+     if(gS(el, "transform_matrix".split("_"))[0][1]==="matrix(0.5, 0.866025, -0.866025, 0.5, 0, 0)")
+{     pp="2_p-X*s",rr="rotate(60deg)",n=1; //b=animate(bl(e+1,m),anmt("transform","3_p+X*s",45,10,ho(45)),"rotate(-135deg)",1);
+     }
+
+  var ev=0,h,bb,v,vv,nxt2,nxt=el.parentElement.parentElement.nextSibling,ele=nxt,fin=[true];
+  
+  
+  ro=el.getAttribute("class");
+  
+  var k=0,bolThs=[false],tab=[];
+  
+  
+  while(nxt){
+    nxt2=nxt;
+  /* if( k!=0){
+           bl(e,m,ths(bb,ele.parentElement,bolThs));} 
+    k++;*/
+     v=gS(nxt, "transform_matrix".split("_"))[0][1]
+    v=nOc(v,5);
+     h=hiSho(nxt,1);
+    if(  !isEven(ev) ){
+       if(true ||ev !=1)
+         {
+           vv=(v-20)/2;
+     //  bl(animate(nxt,anmt("transform","0,0,0,0,0,"+vv*2+"_p-X*s",1,10,ho(1)),1));//jadid
+           tab.push(animate(nxt,anmt("transform","0,0,0,0,0,2_p",vv,10,ho2(vv,-1,[xx_(vv,h)])),1));
+     //if(ev ==7)   
+     //bl(e,m,bb);
+          //  bl(e,m,ths(bb,ele.parentElement))
+         // bl(e,m,mv(nxt,bb,h,20,"1_p+X*s",v,0)); 
+         }else {//bl(e,m,h);
+               bl(e,m,ths(h,ele.parentElement))
+         }
+      //xT=v+2;
+    }else {
+      vv=v/2-1;
+    
+     
+      tab.push(animate(nxt,anmt("transform","0,0,0,0,0,2_p",vv,10,ho2(vv,-1,[xx_(vv,h)])),1));
+     //   bl(animate(nxt,anmt("transform","0,0,0,0,0,"+(v-2)+"_p-X*s",1,10,ho(1)),1));//jadid 
+//bl(e,m,bb);
+        ////  bl(e,m,ths(bb,ele.parentElement))
+          // bl(e,m,mv(nxt,bb,h,0,"1_p+X*s",v,0)); 
+           
+          // xC=v+18;
+          }
+    ev++;
+   
+    nxt=nxt.nextSibling;
+    
+  }
+  
+  if(ev!=0)
+    {
+      
+       
+      
+      
+   
+       // alert("hhhh")
+       //fin[0]= (v-20)/2;
+      vv=(v-20)/2;
+       tab[tab.length-1]=animate(nxt2,anmt("transform","0,0,0,0,0,2_p",vv,10,ho2(vv,-1,[xx_(vv,h,ele.parentElement,fin,bolThs)])),1);
+       // bl(e,m,ths(bb,ele.parentElement));
+        bl(e,m,jdid_(tab,ele.parentElement,bolThs));
+      
+      //  bl(e,m,ths(bb,ele.parentElement));
+        nSi(ele.parentElement,movAnmt(e,m,bolThs),"nxt",fin);
+      
+      
+    }
+  
+  
+  
+  b=animate(el,anmt("transform",pp,30,10,ho(30)),rr,1);
+  if(ro.search(" X")==-1){
+    el.setAttribute("class", ro+" X");
+     bl(b);bl(style(el,"fill","red",sIT(560,0,0)));
+   
+    n=1;
+  }
+ 
+   bl(e,m,ths(b,ele.parentElement,bolThs));
+   bl(e,m,ths(f_(n,el,".gArrow path"),ele.parentElement,bolThs));
+ 
+       }
+     } }
+    function jdid_(b,el_,bolThs){
+          
+         
+          function jdid2(){
+            //var bolThs=[false];
+            for (var i = 0,ii=b.length; i < ii; i++)
+             {if(i==0)
+       {
+        if(!ths(b[i],el_,bolThs)()) i = ii;
+       }  else {//if(i ==ii-1)fin[0]= z[0];
+               
+               bl(b[i]);}
+             
+             }
+           
+          }return jdid2; }
+
+    
+    function f_(d,el,ty){
+      var n=d;
+      function f2(){
+ n= n==1?0:1;
+      // alert(gS(el[1], "transform".split("_"))[0][1])
+        bl(style(el,"fill",color[n],sIT(560,0,0)));
+        if(ty==".gArrow path")
+        {bl(style(bl(ty),"cursor","auto"));
+        bl(style(el,"cursor","pointer"));}
+    }return f2;
+    }
+    function f_r(d,el){
+      var n=d;
+      function fa2(){
+  n==1?(n=0,bl(style(el[0].parentElement.parentElement,"cursor","pointer"))):(n=1,bl(style(el[0].parentElement.parentElement,"cursor","auto")));
+      // alert(gS(el[1], "transform".split("_"))[0][1])
+        bl(style(el,"fill",color[n],sIT(560,0,0)));
+       // bl(style(bl(".gArrow path"),"cursor","auto"));
+      ///////  bl(style(el,"cursor","auto"));
+    }return fa2;
+    }
+     function isEven(n) {
+   return n % 2 == 0;
+}
+   }// return  ar2;
+//}
+ 
+   
+ function xx_(z,w,el,fin,bolThs) {
+   var dif;
+    function ch(e,l,r) {
+ 
+        var v;
+ //console.log ("z "+e[1][1][2][3]);
+         v=gS(e[1][0], "transform_matrix".split("_"))[0][1]
+      v=nOc(v,5);
+    
+      if(e[1][1][1][1][5]!=v)
+   { //console.log("*** "+v+" "+e[1][1][1][1][5])
+    if (/*e[1][1][2][1]*/l=="-" )
+       {dif= e[1][1][1][1][5]-v; 
+        e[1][1][2][3][0]-=dif/2;
+        
+       
+       }
+    else 
+     { dif= v-e[1][1][1][1][5]; 
+    //e[1][1][2][3][3]-=1;
+     e[1][1][2][3][0]+=dif/2;}
+    e[1][1][1][1][5]=v-2;
+    z=e[1][1][2][3][0];
+    
+     
+   
+    return e[1][1][2][3][0];
+   // e[1][1][2][3][0]-=dif;
+   // e[1][1][2][3][3]+=dif;
+    
+   }/* if(dif==e[1][1][2][3][0]-e[1][1][2][3][3])
+       {e[1][1][2][3][3]--;
+         return "cancel"}else*/
+      
+       if(fin!=undefined && fin[0])
+     { //eval("fin[0]"+e[1][1][2][1]+"=-1")
+      if(r==0||r==e[1][1][2][3][0]){
+      ///  alert("... "+fin[0]+" "+e[1][1][2][3][0])
+        bolThs[0]=false;
+           bl(style(bl(".gArrow path"),"cursor","pointer"));                                    el.setAttribute("class",el.getAttribute("class").replace(/ tHiS/g,""))}//console.log("---- "+fin[0]+" "+ e[1][1][2][3][3]);
+     }
+           eval("e[1][1][1][1][5]=e[1][1][1][1][5]"+e[1][1][2][1]+"(-e[1][1][1][2][5])");
+    
+      
+      
+      
+    if (e[1][1][2][1]=="-" ) {
+      if(e[1][1][2][2][0]==z)
+    bl(w)
+      
+    }else {
+      if(e[1][1][2][2][0]==z-1)//z-1
+    bl(w)
+    }   
+      
+      
+}return ch;}
+   
+
+var color=["black","red"]
+var n=1;
+var b2=animate(bl("#chek1"),anmt("transform","3_p+X*s",45,10,ho(45)),"rotate(-135deg)",1);
+//bl("#chek",0,f,b2);
+
+function ff(){
+ n= n==1?0:1;
+ 
+  bl(style(bl("#chek0","#chek1"),"fill",color[n],sIT(560,0,0)))
+
+}
+
+
+function mtch(s,n,x,n2,x2)
+{var nth = 0;
+ s = s.replace(/([+-]?\d+\.\d+|[+-]?\d+)/g, function (match, i, original) {
+
+    nth++;
+   // return (nth ===n) ? Number(match)+x : (nth ===n2) ? Number(match)+x2 : match;
+   return (nth ===n) ? Number(match)+x :match;
+});
+return s;}
+function nOc(s,n){
+//return Number(s.match(/([+-]?\d+\.\d+|[+-]?\d+{5})/g)[1]);
+  return s.match(/([+-]?\d+\.\d+|[+-]?\d+)/g).map(Number)[n]
+}
+
+//addRoot(bl(".rootText text",0));
+var  xx=0;
+bl("button",0,addRoot(".gAll0","gTxt",0,20," RoOt"))
+function addRoot(a,b,x,y,r,n_){
+  function addRoot2(){
+ 
+  // var n=bl("."+b).length-1;
+    // n= isNaN(n)?0:n;
+    var jj,nn,n,z=2,RoOt="",RoOt2="", LI="Root";//,j=bl("."+b+".RoOt")
+  
+  nn=bl(".gTxt").length-1;
+     nn= isNaN(nn)?0:nn;
+    if (r==" RoOt"){RoOt=r+" r";RoOt2=".RoOt.r";z=1;
+     n=nn;             nn=bl(".gTxt.RoOt")!=undefined?bl(".gTxt.RoOt").length:0;
+                   nn= isNaN(nn)?1:nn;
+                  }
+    else{
+      LI="Leaf item"
+      RoOt=" t";RoOt2=".t";
+      n=n_;
+     // n=(bl(b+" g").length-2)/2;
+    // n= isNaN(n)?0:n;
+    }
+     
+ //bl(iHtml(bl(a),0,"+='"+bl(b).outerHTML+"'"));
+   // alert(bl(".gTxt:not(.gAll0 .gTxt)"))
+  bl(a).innerHTML+=bl(".gAll .gTxt").outerHTML.replace("gTxt","gTxt"+RoOt+nn).replace("Root",LI);
+   
+   
+    bl(".gTxt"+RoOt2+nn).setAttribute("transform", "translate("+x+" ,"+(y+n*22)+")"); 
+  
+   
+    
+    clonee()
+    }return addRoot2;
+}
+
+bl("button",1,addLeafC("gTxt","gChek","c",0))
+bl("button",2,addLeafC("gTxt","gRadio","r",10))
+
+function addLeafC(a,b,c,x){
+  function addLeafC2(){
+    var n,nn,y,yy,el,cl,w,chld,cl2,el2,arr,d=0;
+    
+    if((el=bl(".Z"))!=undefined){
+      str=gS(el, "transform_matrix".split("_"))[0][1];
+      
+      cl=el.getAttribute("class");
+      var ga=cl.split(" "); ga=ga[ga.length-1];
+      cl=cl.replace(/ /g,".");
+      cl2=cl.replace(".Z","");
+      y=yy=Number(cl2.match(/([+-]?\d+\.\d+|[+-]?\d+)/g).map(Number)[0]);
+       arr=".gArrow.a"+y+"."+ga;
+      if(/*nOc(str)!=20*/el.children.length==1)
+      {
+      
+       if(cl2.search("RoOt")==-1)
+        { d=-25;
+   
+        }else {
+          mt=  mtch(str,5,20)
+el.setAttribute('transform',mt);
+        }
+      
+      el.innerHTML+=bl(".gAll .gArrow").outerHTML.replace("gArrow","gArrow a"+y+" "+ga);
+  // bl("."+b,n).setAttribute("class", b+" c"+n); 
+    bl(arr).setAttribute("transform", "translate("+(-20+d)+" ,"+(-15)+")"); 
+     //  ar2(".gArrow.a"+y)
+      }
+      //cl2="cl.replace(y,y++);
+      w=(chld=el.children)!=undefined?(chld.length)/2:1;
+  
+      nSi(bl("."+cl2),mov);
+    
+      while(false &&(el2=bl("."+cl2.replace(y,++yy)))!=undefined){
+  
+    mt=  mtch(gS(el2, "transform_matrix".split("_"))[0][1],6,22,5,60)
+el2.setAttribute('transform',mt);
+      
+      }
+     
+    }else
+      return;
+    
+    var c_h,c_h2,n2;
+     // n=(bl(b+" g").length-2)/2;
+     
+    // n=(c_h=bl("."+cl+" ."+b))!=undefined?c_h.length:0;
+    n=(c_h=bl("."+cl+" .gChek"))!=undefined?(c_h.length):0;
+     n= isNaN(n)?1:n;
+     n2=(c_h2=bl("."+cl+" .gRadio"))!=undefined?(c_h2.length):0;
+                   n2= isNaN(n2)?1:n2;
+    n+=n2;
+    var ch;
+    if((ch=bl("."+b))!=undefined)
+    nn=ch.length-1;
+    else nn=0;
+   nn= isNaN(nn)?0:nn;
+  
+  el.innerHTML+=bl(".gAll ."+b).outerHTML.replace(""+b,""+b+" "+c+nn);
+  // bl("."+b,n).setAttribute("class", b+" c"+n); 
+    bl("."+b+"."+c+nn).setAttribute("transform", "translate("+x+" ,"+(n*22+4)+")"); 
+    addRoot("."+cl,"."+cl,35,22,arr,n)();
+  //  addRow(".gAll0","gArr",0)();
+}return addLeafC2;
+}
+//addRow(".gTxt.t0","gChek",100)
+
+function addArr(el){
+ var mt2=gS(el, "transform_matrix".split("_"))[0][1].match(/^(?:[^,]*\,){4}([^,]*)/)[1].match(/([+-]?\d+\.\d+|[+-]?\d+)/g).map(Number)[0]+22;
+  var mt=gS(el2, "transform_matrix".split("_"))[0][1].match(/(?:[^,]*,){5}/)+mt2+")";
+      
+el2.setAttribute('transform',mt);
+}
+
+
+function clonee(r,n){
+ 
+  var el,elClone,j=isO(bl(".gAll0 .gTxt",".gAll0 .gRadio",".gAll0 .gChek")),jj=j.length;
+  // isNaN(jj)&& (jj=1,j=[j]);
+  for (var m=0;m< jj;m++){
+        el= j[m];  
+      
+  if((cl=el.getAttribute("class")).search("gTxt")!=-1){
+     
+  elClone = el.cloneNode(true);
+
+el.parentNode.replaceChild(elClone, el);
+  bl("."+cl.replace(/ /g,"."),fs(cl));
+  }}}
+
+
+
+function tV(r,n){
+ 
+  var el,elClone,j=isO(bl(".gAll0 .gTxt",".gAll0 .gRadio",".gAll0 .gChek")),jj=j.length;
+  // isNaN(jj)&& (jj=1,j=[j]);
+  for (var m=0;m< jj;m++){
+        el= j[m];  
+      
+  if((cl=el.getAttribute("class")).search("gTxt")!=-1){
+     
+  elClone = el.cloneNode(true);
+
+el.parentNode.replaceChild(elClone, el);
+        ar_("."+cl.replace(/ /g,"."),"radio");
+     // el.addEventListener('click',fs(cl));
+      bl("."+cl.replace(/ /g,"."),fs(cl))
+    }else if(cl.search("gChek")!=-1){
+      
+               ar_("."+cl.replace(/ /g,".")+" #chek","check","."+el.nextSibling.getAttribute("class").replace(/ /g,"."));
+               }/*else if(false && cl.search("gRadio")!=-1){
+               ar_("gTxt>.gRadio","radio");
+                 bl(".gRadio:nth-of-type(1)")
+               }*/
+    
+      }
+
+ ar_(".gAll0 .gArrow path");
+}
+function fs(cl){
+  function fs2(e){
+   // var cl=e.target.getAttribute("class");
+    var cl2;
+    cl2=e.target.parentElement.getAttribute("class");
+    if(bl(".Z")!=undefined && cl2.search(" ")!=-1)
+   { bl(style(bl(".Z.chld"),"fill","black"));
+  bl(".Z").setAttribute("class",bl(".Z").getAttribute("class").replace("Z ",""))
+  
+   }
+     
+    if(cl2.search(" ")!=-1){
+      
+    //cl2=cl2.replace(" "," Z ");
+    cl2=cl2.replace("Z ","").replace(" "," Z ");
+    e.target.parentElement.setAttribute("class",cl2);
+  
+  bl(style(bl("."+cl2.replace(/ /g,".")+".chld",0),"fill","green"),"now");
+ }
+     
+  
+}return fs2;
+}
+
+function mov(ns){
+      var  mt=  mtch(gS(ns, "transform_matrix".split("_"))[0][1],6,22,5,60)
+ns.setAttribute('transform',mt);
+      }
+
+ function nSi(a,f,str,fin){
+      var div = a,n=0,j=0,tab=[];
+var bolPar=true,nextSibling = div.nextSibling, next ;
+      while(bolPar) {
+       
+     /////   console.log("jjj "+j);
+while(nextSibling /*&& nextSibling.nodeType != 1*/) {
+ 
+  if(str=="nxt" )
+    {fin[0]=false;tab[tab.length]=nextSibling;}
+  else f(nextSibling,n);
+  
+
+ // n++;
+  //////console.log("ggggggg "+g)
+
+    nextSibling = nextSibling.nextSibling
+  
+}  
+      //
+        next=div.parentElement;
+         if( next.getAttribute("class").search("gAll0")==-1 ){
+           div=next;
+        nextSibling=next.nextSibling;
+        }else 
+        bolPar=false;
+      }  
+   if(str=="nxt"&& tab[0]!=undefined)
+  f(tab,a,fin);
+    }
+
+ function movAnmt(e,m,bolThs){
+   function xx(z,el,fin,bolThs) {
+     var dif;
+    function ch(e,l,r) {
+      var v,vv,di=0;
+      
+       vv=gS(el, "transform_matrix".split("_"))[0][1]
+      vv=nOc(vv,5);
+      v=gS(e[1][0], "transform_matrix".split("_"))[0][1]
+      v=nOc(v,5);
+      if(e[1][1][1][1][5]!=v){
+       
+        if (l=="-" )
+           {e[1][1][1][1][5]=v;
+            
+           
+           }
+           else {e[1][1][1][1][5]=v-2;
+                  e[1][1][2][3][0]=z[0];
+                e[1][1][2][3][3]=1;
+            return z[0];
+                }
+              
+        
+      };
+      if(fin!=undefined)
+     { //eval("fin[0]"+e[1][1][2][1]+"=-1")
+      if(r==0||r==e[1][1][2][3][0]){
+         //alert("--- "+fin[0]+" "+e[1][1][2][3][0]);
+        bolThs[0]=false;
+        bl(style(bl(".gArrow path"),"cursor","pointer"));                                     el.setAttribute("class",el.getAttribute("class").replace(/ tHiS/g,""))}//console.log("+++++ "+fin[0]+" "+ e[1][1][2][3][3]);
+     }
+      
+      
+  eval("e[1][1][1][1][5]=e[1][1][1][1][5]"+e[1][1][2][1]+"(-e[1][1][1][2][5])");
+     return ""; 
+      
+   
+}return ch;}
+      function movAnmt2(nxt,el,fin){
+  
+      //  z=22*zz;
+     
+       var b=[],z=[]/*,fin=[]*/;
+         for (var i = 0,ii=nxt.length; i <ii; i++)
+       {   if(i==0)
+       {vv=gS(el, "transform_matrix".split("_"))[0][1]
+      vv=nOc(vv,5);
+      v=gS(nxt[0], "transform_matrix".split("_"))[0][1]
+      v=nOc(v,5);
+       if(nxt[0].getAttribute("class").search("RoOt")==-1)
+       z[0]=(v-vv-4)/2;else z[0]=(v-vv-4)/2-8;}
+       if(i ==ii-1)
+       {//fin[0]= z[0];
+       b[b.length]=animate(nxt[i],anmt("transform","0,0,0,0,0,"+2+"_p",z[0],10,ho2(z[0],-1,[xx(z,el,fin,bolThs/*+(n-1)*22*/)])),1)} else
+         b[b.length]=animate(nxt[i],anmt("transform","0,0,0,0,0,"+2+"_p",z[0],10,ho2(z[0],-1,[xx(z,el/*+(n-1)*22*/)])),1)
+       } 
+        bl(e,m,jdid(b,nxt[0],el,z,fin,bolThs));
+       function jdid(b,nx,el,z,fin,bolThs){
+          
+         
+          function jdid2(){
+           // var bolThs=[false];
+            for (var i = 0,ii=b.length; i < ii; i++)
+             {if(i==0)
+       {vv=gS(el, "transform_matrix".split("_"))[0][1]
+      vv=nOc(vv,5);
+      v=gS(nx, "transform_matrix".split("_"))[0][1]
+      v=nOc(v,5);
+        if(nx.getAttribute("class").search("RoOt")==-1)
+       z[0]=(v-vv-4)/2;else z[0]=(v-vv-4)/2-8;
+        if(!ths(b[i],el,bolThs)()) i = ii;
+       }  else {//if(i ==ii-1)fin[0]= z[0];
+               
+               bl(b[i]);}
+             
+             }
+           
+          }return jdid2; }
+        
+        return z;
+     
+    } return movAnmt2;}
+
+
+
+ /* function fss(e){
+   // var cl=e.target.getAttribute("class");
+    var cl2;
+    cl2=e.target.getAttribute("class");
+    if(bl(".tHiS")!=undefined && cl2.search(" ")!=-1)
+   { //bl(style(bl(".Z.chld"),"fill","black"));
+  bl(".tHiS").setAttribute("class",bl(".tHiS").getAttribute("class").replace("tHiS ",""))
+  
+    
+   }
+    
+    if(cl2.search(" ")!=-1){
+      
+    //cl2=cl2.replace(" "," Z ");
+    cl2=cl2.replace("tHiS ","").replace(" "," tHiS ");
+    e.target.setAttribute("class",cl2);
+  
+
+ }
+     
+  
+}*/
+
+
+   function ths(b,el,bolThs){
+     function ths2(e){
+       if(bolThs[0]){
+          bl(b);
+         return true;
+       }
+      else if(bl(".tHiS")==undefined ||el.getAttribute("class").search("tHiS")!=-1)
+     
+   { 
+  el.setAttribute("class",el.getAttribute("class").replace(/ tHiS/g,"")+" tHiS")
+  bolThs[0]=true;
+     bl(b);
+     return true;
+        }
+       return false;
+      }return ths2;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
