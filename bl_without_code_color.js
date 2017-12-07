@@ -1544,9 +1544,10 @@ if(/*hoho*/ false ) {
                 var g = o[f].split("{");
                 h += l(g) + "}"
             }
+h = h.substring(0, h.length - 1); h = replC(h, "css"); h = h.replace(/(?:\r\n|\r|\n)/g, '<span class="li li3">\r</span>'); 
 }else h=o;
-            if (h = h.substring(0, h.length - 1), h = replC(h, "css"), h = h.replace(/(?:\r\n|\r|\n)/g, '<span class="li li3">\r</span>'), void 0 != t) return h;
-            bl(co).innerHTML = h;
+            if (void 0 != t) return h;
+            bl(co).innerHTML = h.replace(/(?:\r\n|\r|\n)/g, '<span class="li li3">\r</span>');
             var u = bl(co + " .li3");
             void 0 !== u && mE(u, bl(col_co), bl(co), bl(mi)), sCCP(d, bl(co)) + cc2
         }
@@ -1629,7 +1630,7 @@ var verg = [];
             var stri3 = str;
             if (tCF += jC2(stri3), tCF = replC(tCF), tCF = tCF.replace(/(?:\r\n|\r|\n)/g, '<span class="li li2">\r</span>'), null != verg && void 0 !== verg[0])
                 for (var ve = 0; ve < verg.length; ve++) tCF = tCF.replace("µ§£§@§£§#", '<span class="verg" style="color:#2988e2;font-weight: 900;font-size: 18px;">' + verg[ve] + "</span>");
-            if (void 0 != bS) return tCF;}else tCF = str;
+            if (void 0 != bS) return tCF;}else tCF = str.replace(/(?:\r\n|\r|\n)/g, '<span class="li li2">\r</span>');
             
             bl(co).innerHTML = tCF;
             var spanLi_ = bl(co + " .li2");
