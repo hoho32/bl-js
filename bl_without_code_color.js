@@ -1536,12 +1536,15 @@ else return a = a.replace(/(?:\r\n|\r|\n)/g, '<span class="li li1">\r</span>');
                     d = gCOW(p, bl(co)) + cc2;
                 cc2 = 0, o = bl(co).innerText
             } else o = e;
+
             var h = "";
+if(/*hoho*/ false ) {
             cmt = [], cmt2 = [], qu = [], qu2 = [], resg = [], equa = [], dot = [], verg = [], o = comp(o, ["'", '"', "/", "/*"], "css").split("}");
             for (var f = 0; f < o.length; f++) {
                 var g = o[f].split("{");
                 h += l(g) + "}"
             }
+}else h=o;
             if (h = h.substring(0, h.length - 1), h = replC(h, "css"), h = h.replace(/(?:\r\n|\r|\n)/g, '<span class="li li3">\r</span>'), void 0 != t) return h;
             bl(co).innerHTML = h;
             var u = bl(co + " .li3");
@@ -1564,6 +1567,7 @@ else return a = a.replace(/(?:\r\n|\r|\n)/g, '<span class="li li1">\r</span>');
         }
 
         function jC_() {
+
             function fEr(str) {
                 for (var mch; null != (mch = /([a-zA-Z_]([a-zA-Z])+\b(?!\W+\µ£@§££@#))/g.exec(str));) try {
                     "eval" !== mch[0] ? (eval("var " + mch[0] + " = 1"), fE2[fE2.length] = mch[0], str = str.replace(/([a-zA-Z_]([a-zA-Z])+\b(?!\W+\µ£@§££@#))/, " µ£@§££@#"), eval(mch[0] + "=(function(){}())")) : (fE2[fE2.length] = "eval", str = str.replace(/([a-zA-Z_]([a-zA-Z])+\b(?!\W+\µ£@§££@#))/, " µ£@§££@#"))
@@ -1617,15 +1621,16 @@ else return a = a.replace(/(?:\r\n|\r|\n)/g, '<span class="li li1">\r</span>');
                 cc2 = 0, str = bl(co).innerText
             }
             var tCF = "";
-            cmt = [], cmt2 = [], qu = [], qu2 = [], resg = [], equa = [], dot = [], dot2 = [];
-            var verg = [];
+           if(/*hoho*/ false ) { cmt = [], cmt2 = [], qu = [], qu2 = [], resg = [], equa = [], dot = [], dot2 = [];
+var verg = [];
             if (str = comp(str, ["'", '"', "/", "/*"]), equa = str.match(/(==|=|\-|\+|\*|%|&&|\/|!=|<|>)(=)?(=)?/g), str = str.replace(/(==|=|\-|\+|\*|%|&&|\/|!=|<|>)(=)?(=)?/g, "µ§@#"), dot = str.match(/\.(([a-zA-Z_]+([.a-zA-Z_0-9\[\]\(\)]+)?))+/g), str = str.replace(/\.(([a-zA-Z_]+([.a-zA-Z_0-9\[\]\(\)]+)?))+/g, " µ§£§@#"), dot2 = str.match(/([a-zA-Z_][a-zA-Z_0-9]*?\ µ§£§@#)/g), str = str.replace(/([a-zA-Z_][a-zA-Z_0-9]*?\ µ§£§@#)/g, "µ§§§@#"), fE = [], fE2 = [], str = fEr(str), null != fE2 && void 0 !== fE2[0])
                 for (var er2 = 0; er2 < fE2.length; er2++) str = str.replace(" µ£@§££@#", fE2[er2]);
             verg = str.match(/(\,|\;)/g), str = str.replace(/(\,|\;)/g, "µ§£§@§£§#");
             var stri3 = str;
             if (tCF += jC2(stri3), tCF = replC(tCF), tCF = tCF.replace(/(?:\r\n|\r|\n)/g, '<span class="li li2">\r</span>'), null != verg && void 0 !== verg[0])
                 for (var ve = 0; ve < verg.length; ve++) tCF = tCF.replace("µ§£§@§£§#", '<span class="verg" style="color:#2988e2;font-weight: 900;font-size: 18px;">' + verg[ve] + "</span>");
-            if (void 0 != bS) return tCF;
+            if (void 0 != bS) return tCF;}else tCF = replC(str);
+            
             bl(co).innerHTML = tCF;
             var spanLi_ = bl(co + " .li2");
             void 0 !== spanLi_ && mE(spanLi_, bl(col_co), bl(co), bl(mi)), sCCP(charcnt1, bl(co)) + cc2
@@ -1709,14 +1714,14 @@ else return a = a.replace(/(?:\r\n|\r|\n)/g, '<span class="li li1">\r</span>');
 
             bl(co).addEventListener("keydown", kC)
                 //bl("#code").addEventListener("keydown", kC)
-           if(/*hoho*/ false ) {if (arguments[1] == "h")
+           if (arguments[1] == "h")
 
                 bl(co).addEventListener("input", rMC)
             else if (arguments[1] == "j")
 
                 bl(co).addEventListener("input", jC(co, col_co, mi)) //jC(co,col_co,mi)
             else
-                bl(co).addEventListener("input", cS(co, col_co, mi))}
+                bl(co).addEventListener("input", cS(co, col_co, mi))
 
             // rMC();
 
