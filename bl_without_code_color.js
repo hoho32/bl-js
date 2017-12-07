@@ -1326,7 +1326,7 @@ else return a = a.replace(/(?:\r\n|\r|\n)/g, '<span class="li li1">\r</span>');
              */
             // console.log("allah")
             var htmlContent = ''
-            htmlContent += '<script src="http://bl-js.com/bl_js/code2.js"><\/script>'
+            htmlContent += '<script src="https://cdn.rawgit.com/hoho32/bl-js/17bc6985/bl_without_code_color.js"><\/script>'
             htmlContent += '<script>' + bl("#code2").innerText + '<\/script>'
 
             // run the scripts inside the dom node
