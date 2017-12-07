@@ -1709,14 +1709,14 @@ else return a = a.replace(/(?:\r\n|\r|\n)/g, '<span class="li li1">\r</span>');
 
             bl(co).addEventListener("keydown", kC)
                 //bl("#code").addEventListener("keydown", kC)
-            if (arguments[1] == "h")
+           if(/*hoho*/ false ) {if (arguments[1] == "h")
 
                 bl(co).addEventListener("input", rMC)
             else if (arguments[1] == "j")
 
                 bl(co).addEventListener("input", jC(co, col_co, mi)) //jC(co,col_co,mi)
             else
-                bl(co).addEventListener("input", cS(co, col_co, mi))
+                bl(co).addEventListener("input", cS(co, col_co, mi))}
 
             // rMC();
 
