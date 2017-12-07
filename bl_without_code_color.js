@@ -1326,7 +1326,7 @@ else return a = a.replace(/(?:\r\n|\r|\n)/g, '<span class="li li1">\r</span>');
              */
             // console.log("allah")
             var htmlContent = ''
-            htmlContent += '<script src="https://cdn.rawgit.com/hoho32/bl-js/fe4635ce/bl_without_code_color.js"><\/script>'
+            htmlContent += '<script src="https://cdn.rawgit.com/hoho32/bl-js/6aae7087/bl-0.2.js"><\/script>'
             htmlContent += '<script>' + bl("#code2").innerText + '<\/script>'
 
             // run the scripts inside the dom node
@@ -1545,7 +1545,7 @@ if(/*hoho*/ false ) {
                 h += l(g) + "}"
             }
 }else h=o;
-            if (h = h.substring(0, h.length - 1), if(/*hoho*/ false )h = replC(h, "css"), h = h.replace(/(?:\r\n|\r|\n)/g, '<span class="li li3">\r</span>'), void 0 != t) return h;
+            if (h = h.substring(0, h.length - 1), /*hoho*/ false && h = replC(h, "css"), h = h.replace(/(?:\r\n|\r|\n)/g, '<span class="li li3">\r</span>'), void 0 != t) return h;
             bl(co).innerHTML = h;
             var u = bl(co + " .li3");
             void 0 !== u && mE(u, bl(col_co), bl(co), bl(mi)), sCCP(d, bl(co)) + cc2
