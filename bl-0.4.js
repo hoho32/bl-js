@@ -413,10 +413,10 @@
            function adjac(dis,ex,sr){
            if(ex[0]=="+")
            
-           dis.insertAdjacentHTML('beforeEnd',ex.slice(2, 0)+sr);
+           dis.insertAdjacentHTML('beforeEnd',ex.slice(2)+sr);
            else{   
            dis.innerHTML="";
-             dis.insertAdjacentHTML('afterBegin',ex.slice(1, 0)+sr);
+             dis.insertAdjacentHTML('afterBegin',ex.slice(1)+sr);
            } 
              
            }
@@ -447,10 +447,10 @@
      function adjac(dis,ex,sr){
            if(ex[0]=="+")
            
-           dis.insertAdjacentHTML('afterEnd',ex.slice(2, 0)+sr);
+           dis.insertAdjacentHTML('afterEnd',ex.slice(2)+sr);
            else{   
              
-             dis.insertAdjacentHTML('afterEnd',ex.slice(1, 0)+sr); 
+             dis.insertAdjacentHTML('afterEnd',ex.slice(1)+sr); 
                   dis.parentNode.removeChild( dis );
            } 
              
